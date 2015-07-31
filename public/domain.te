@@ -349,6 +349,7 @@ neverallow {
     domain
     -appdomain
     with_asan(`-asan_extract')
+    -audioserver
     -dumpstate
     -shell
     userdebug_or_eng(`-su')
