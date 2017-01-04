@@ -100,3 +100,7 @@ read_runtime_log_tags(system_app)
 
 # app domains which access /dev/fuse should not run as system_app
 neverallow system_app fuse_device:chr_file *;
+
+# Themed resources (i.e. composed icons)
+allow appdomain theme_data_file:dir r_dir_perms;
+allow appdomain theme_data_file:file r_file_perms;
